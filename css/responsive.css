@@ -1,0 +1,95 @@
+/* Phone */
+@media screen and (min-device-width: 250px) and (max-device-width: 500px) {
+
+  .content {
+    margin-top: 2rem;
+    width: 90%;
+  }
+
+  .avater {
+    margin-right: 1rem;
+    width: 5rem!important;
+    height: 5rem!important;
+  }
+
+  .profile-badge {
+    /* justify-content: space-between; */
+    margin-bottom: 1.5rem;
+  }
+
+  .pi-name {
+    font-size: 23px;
+  }
+  
+  .pi-bio {
+    font-size: 10px;
+  }
+  
+  .pi-role {
+    margin-top: 0.5rem;
+    font-size: 10px;
+    padding: 0.2rem 0.75rem;
+  }
+
+  .bubble {
+    padding: 1rem;
+    font-size: 12px;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    height: 140px;
+  }
+
+  .cv a {
+    font-size: 13px;
+  }
+}
+
+/* Phone */
+@media screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+
+  .content {
+    margin-top: 3rem;
+    width: 70%;
+  }
+
+  .avater {
+    margin-right: 3rem;
+    width: 7rem!important;
+    height: 7rem!important;
+  }
+
+  .profile-badge {
+    margin-bottom: 1.5rem;
+  }
+
+  .pi-name {
+    font-size: 30px;
+  }
+  
+  .pi-bio {
+    font-size: 16px;
+  }
+  
+  .pi-role {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    padding: 0.35rem 1rem;
+  }
+
+  .bubble {
+    padding: 1rem;
+    font-size: 14px;
+    line-height: 1.35rem;
+    margin-bottom: 1rem;
+    height: 140px;
+  }
+
+  .social-medias  i {
+    font-size: 20px;
+  }
+  
+  
+  .cv a {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,142 @@
+:root {
+  --text-color:#212f3d;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+#whole_page {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin-top: 3rem;
+  width: 50%;
+}
+
+.profile-badge {
+  user-select: none;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.avater {
+  margin-right: 2rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  /* border: 4px solid rgba(0, 0, 0, 1); */
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.avater img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.pi-name {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.pi-bio {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.pi-role {
+  margin-top: 1rem;
+  font-size: 12px;
+  display: inline-block;
+  background-color: var(--text-color);
+  color: #fff;
+  user-select: none;
+  padding: 0.35rem 1rem;
+  border-radius: 1rem;
+}
+
+.emoji-badge {
+  background-color: var(--text-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  border: 0.5px solid var(--text-color);
+}
+
+.bubble {
+  position: relative;
+  background: #eaecee;
+  color: #FFFFFF;
+  width: 100%;
+  height: 150px;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  user-select: none;
+  padding: 1rem;
+  font-size: 16px;
+  color: var(--text-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 1.5rem;
+}
+.bubble:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #eaecee transparent;
+  border-width: 0 16px 26px;
+  top: -24px;
+  left: 8%;
+  margin-left: -16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.social-medias a{
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 0 0.35rem;
+}
+
+.social-medias  i {
+  font-size: 24px;
+}
+
+
+.cv a {
+  color: var(--text-color);
+  font-size: 16px;
+}

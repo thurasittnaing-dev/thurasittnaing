@@ -61,6 +61,10 @@
     font-weight: 500;
   }
 
+  .year i {
+    font-size: 12px;
+  }
+
   .company a {
     font-size: 13px;
   }

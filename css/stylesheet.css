@@ -4,7 +4,6 @@
 
 * {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
   font-size: 20px;
   padding: 0;
   margin: 0;
@@ -158,6 +157,8 @@ body {
   transform: translate(-50%, 0);
   font-size: 18px;
   background-color: transparent;
+  display: inline-block;
+  max-height: 22px;
 }
 
 .projects-btn i, .up-btn i{
@@ -180,6 +181,7 @@ body {
 }
 
 .work-card {
+  cursor: pointer;
   user-select: none;
   padding: 1rem;
   margin: 1.5rem 0;
@@ -187,12 +189,18 @@ body {
   justify-items: center;
   background-color: #f8f9f9;
   border-radius: 0.35rem;
+  transition: all 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
+.work-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
 .year {
-  width: 100%;
-  margin-top: 0.2rem;
+  width: 50%;
+  margin-top: 0.6rem;
+  opacity: 0.8;
   margin-right: 5rem;
   font-size: 16px;
   font-weight: 500;
@@ -229,5 +237,5 @@ body {
   background-color: transparent;
   font-size: 15px;
   font-weight: 600;
-  color: #2874a6;
+  color: var(--text-color);
 }

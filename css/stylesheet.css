@@ -11,15 +11,24 @@
   box-sizing: border-box;
   font-weight: 400;
 }
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 #whole_page {
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .content {
+  position: relative;
   margin-top: 3rem;
   width: 50%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 .profile-badge {
@@ -139,4 +148,86 @@
 .cv a {
   color: var(--text-color);
   font-size: 16px;
+}
+
+.projects-btn, .up-btn {
+  color: var(--text-color);
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.projects-btn i, .up-btn i{
+  font-size: 18px;
+}
+
+.up-btn {
+  top: 5%;
+}
+
+.work-experiences {
+  padding: 0.5rem;
+  margin-top: 20%;
+}
+
+.we-title {
+  font-size: 20px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.work-card {
+  user-select: none;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-items: center;
+  background-color: #f8f9f9;
+  border-radius: 0.35rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.year {
+  width: 100%;
+  margin-top: 0.2rem;
+  margin-right: 5rem;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.job {
+  width: 100%;
+  background-color: transparent;
+}
+
+.company, .company a i {
+  background-color: transparent;
+}
+
+.company a {
+  font-size: 16px;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.location {
+  font-size: 12px;
+  opacity: 0.8;
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.role {
+  margin-top: 0.5rem;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2874a6;
 }

@@ -10,6 +10,7 @@
   box-sizing: border-box;
   font-weight: 400;
 }
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -17,6 +18,7 @@ body {
 
 #whole_page {
   display: flex;
+  max-width: 100vw;
   justify-content: center;
   overflow-x: hidden;
 }
@@ -141,18 +143,26 @@ body {
 
 .social-medias  i {
   font-size: 24px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+.social-medias i:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
 .cv a {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .projects-btn, .up-btn {
   color: var(--text-color);
   position: absolute;
-  bottom: 15%;
+  bottom: 30%;
   left: 50%;
   transform: translate(-50%, 0);
   font-size: 18px;
@@ -171,7 +181,7 @@ body {
 
 .work-experiences {
   padding: 0.5rem;
-  margin-top: 20%;
+  padding-top: 20%;
 }
 
 .we-title {
@@ -236,6 +246,10 @@ body {
   margin-top: 0.5rem;
   background-color: transparent;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-color);
+}
+
+.row {
+  --bs-gutter-x:0!important;
 }

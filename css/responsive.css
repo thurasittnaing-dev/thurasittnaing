@@ -1,5 +1,5 @@
 /* Phone */
-@media screen and (min-device-width: 250px) and (max-device-width: 500px) {
+@media screen and (min-device-width: 250px) and (max-device-width: 820px) {
 
   .content {
     margin-top: 2rem;
@@ -7,7 +7,7 @@
   }
 
   .avater {
-    margin-right: 3rem;
+    margin-right: 2rem;
     width: 5rem!important;
     height: 5rem!important;
     border-radius: 50%;
@@ -76,18 +76,30 @@
   .projects-btn i, .up-btn i{
     font-size: 16px;
   }
+
+  .projects-btn, .up-btn {
+    bottom: 20%!important;
+  }
+
+  .socials {
+    margin-top: 2rem;
+  }
   
   .up-btn {
-    top: 2%;
+    top: 6%;
   }
 
   .projects-btn {
     bottom: 10%;
   }
+
+  .work-experiences {
+    padding-top: 35%!important;
+  }
 }
 
 /* Tablet */
-@media screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 850px) and (max-device-width: 1324px) {
 
   .content {
     margin-top: 3rem;
@@ -134,6 +146,10 @@
 
   .social-medias  i {
     font-size: 20px;
+  }
+
+  .projects-btn, .up-btn {
+    bottom: 30%;
   }
   
   

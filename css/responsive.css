@@ -1,159 +1,35 @@
-/* Phone */
-@media screen and (min-device-width: 250px) and (max-device-width: 820px) {
-
-  .content {
-    margin-top: 2rem;
-    width: 90%;
+@media screen and (min-device-width:250px) and (max-device-width:820px){
+  .content{margin-top:2rem;width:90%}
+  .avater{margin-right:2rem;width:5rem!important;height:5rem!important;border-radius:50%}
+  .avater img{width:5rem!important;height:5rem!important;border-radius:50%}
+  .profile-badge{margin-bottom:1.5rem}
+  .pi-name{font-size:23px}
+  .pi-bio{font-size:10px}
+  .pi-role{margin-top:.5rem;font-size:10px;padding:.2rem .75rem}
+  .bubble{padding:1rem;font-size:12px;line-height:1rem;margin-bottom:1rem;height:140px}
+  .cv a{font-size:13px}
+  .work-card{padding:.6rem;margin:1rem 0}
+  .year{margin-right:1rem;font-size:12px;font-weight:500}
+  .year i{font-size:12px}
+  .company a{font-size:13px}
+  .role{font-size:13px}
+  .projects-btn i,.up-btn i{font-size:16px}
+  .projects-btn,.up-btn{bottom:20%!important}
+  .socials{margin-top:2rem}
+  .up-btn{top:6%}
+  .projects-btn{bottom:10%}
+  .work-experiences{padding-top:35%!important}
   }
-
-  .avater {
-    margin-right: 2rem;
-    width: 5rem!important;
-    height: 5rem!important;
-    border-radius: 50%;
+  @media screen and (min-device-width:850px) and (max-device-width:1324px){
+  .content{margin-top:3rem;width:70%}
+  .avater{margin-right:3rem;width:6rem!important;height:6rem!important;border-radius:50%}
+  .avater img{width:6rem!important;height:6rem!important;border-radius:50%}
+  .profile-badge{margin-bottom:1.5rem}
+  .pi-name{font-size:30px}
+  .pi-bio{font-size:16px}
+  .pi-role{margin-top:.5rem;font-size:14px;padding:.35rem 1rem}
+  .bubble{padding:1rem;font-size:14px;line-height:1.35rem;margin-bottom:1rem;height:140px}
+  .social-medias i{font-size:20px}
+  .projects-btn,.up-btn{bottom:30%}
+  .cv a{font-size:16px}
   }
-
-  .avater img {
-    width: 5rem!important;
-    height: 5rem!important;
-    border-radius: 50%;
-  }
-
-  .profile-badge {
-    /* justify-content: space-between; */
-    margin-bottom: 1.5rem;
-  }
-
-  .pi-name {
-    font-size: 23px;
-  }
-  
-  .pi-bio {
-    font-size: 10px;
-  }
-  
-  .pi-role {
-    margin-top: 0.5rem;
-    font-size: 10px;
-    padding: 0.2rem 0.75rem;
-  }
-
-  .bubble {
-    padding: 1rem;
-    font-size: 12px;
-    line-height: 1rem;
-    margin-bottom: 1rem;
-    height: 140px;
-  }
-
-  .cv a {
-    font-size: 13px;
-  }
-
-  .work-card {
-    padding: 0.6rem;
-    margin: 1rem 0;
-  }
-  
-  .year {
-    margin-right: 1rem;
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  .year i {
-    font-size: 12px;
-  }
-
-  .company a {
-    font-size: 13px;
-  }
-  
-  .role {
-    font-size: 13px;
-  }
-
-  .projects-btn i, .up-btn i{
-    font-size: 16px;
-  }
-
-  .projects-btn, .up-btn {
-    bottom: 20%!important;
-  }
-
-  .socials {
-    margin-top: 2rem;
-  }
-  
-  .up-btn {
-    top: 6%;
-  }
-
-  .projects-btn {
-    bottom: 10%;
-  }
-
-  .work-experiences {
-    padding-top: 35%!important;
-  }
-}
-
-/* Tablet */
-@media screen and (min-device-width: 850px) and (max-device-width: 1324px) {
-
-  .content {
-    margin-top: 3rem;
-    width: 70%;
-  }
-
-  .avater {
-    margin-right: 3rem;
-    width: 6rem!important;
-    height: 6rem!important;
-    border-radius: 50%;
-  }
-
-  .avater img {
-    width: 6rem!important;
-    height: 6rem!important;
-    border-radius: 50%;
-  }
-  .profile-badge {
-    margin-bottom: 1.5rem;
-  }
-
-  .pi-name {
-    font-size: 30px;
-  }
-  
-  .pi-bio {
-    font-size: 16px;
-  }
-  
-  .pi-role {
-    margin-top: 0.5rem;
-    font-size: 14px;
-    padding: 0.35rem 1rem;
-  }
-
-  .bubble {
-    padding: 1rem;
-    font-size: 14px;
-    line-height: 1.35rem;
-    margin-bottom: 1rem;
-    height: 140px;
-  }
-
-  .social-medias  i {
-    font-size: 20px;
-  }
-
-  .projects-btn, .up-btn {
-    bottom: 30%;
-  }
-  
-  
-  .cv a {
-    font-size: 16px;
-  }
-}

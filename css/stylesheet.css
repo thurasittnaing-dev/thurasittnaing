@@ -31,3 +31,6 @@ body{overflow-x:hidden;scroll-behavior:smooth}
 .location{font-size:12px;opacity:.8;background-color:transparent;color:var(--text-color)}
 .role{margin-top:.5rem;background-color:transparent;font-size:15px;font-weight:500;color:var(--text-color)}
 .row{--bs-gutter-x:0!important}
+.arsenal{
+  width: 0.9rem;
+}

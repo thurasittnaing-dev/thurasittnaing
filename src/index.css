@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 220 14% 94%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 220 14% 94%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 211 100% 50%;
+
+    --radius: 1rem;
+
+    /* iOS chat tokens */
+    --bubble-sent: 211 100% 50%;
+    --bubble-sent-foreground: 0 0% 100%;
+    --bubble-received: 220 14% 92%;
+    --bubble-received-foreground: 220 20% 10%;
+    --chat-bg: 220 20% 97%;
+    --ios-shadow: 0 2px 15px -3px hsl(220 20% 10% / 0.08);
+    --ios-shadow-lg: 0 8px 30px -5px hsl(220 20% 10% / 0.12);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 225 16% 8%;
+    --foreground: 220 14% 92%;
+
+    --card: 225 16% 12%;
+    --card-foreground: 220 14% 92%;
+
+    --popover: 225 16% 12%;
+    --popover-foreground: 220 14% 92%;
+
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 225 14% 18%;
+    --secondary-foreground: 220 14% 88%;
+
+    --muted: 225 14% 16%;
+    --muted-foreground: 220 10% 56%;
+
+    --accent: 225 14% 18%;
+    --accent-foreground: 220 14% 92%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 225 14% 18%;
+    --input: 225 14% 18%;
+    --ring: 211 100% 50%;
+
+    --bubble-sent: 211 100% 50%;
+    --bubble-sent-foreground: 0 0% 100%;
+    --bubble-received: 225 14% 18%;
+    --bubble-received-foreground: 220 14% 88%;
+    --chat-bg: 225 16% 8%;
+    --ios-shadow: 0 2px 15px -3px hsl(0 0% 0% / 0.3);
+    --ios-shadow-lg: 0 8px 30px -5px hsl(0 0% 0% / 0.4);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  .ios-card {
+    @apply bg-card rounded-2xl;
+    box-shadow: var(--ios-shadow);
+  }
+  .ios-card-lg {
+    @apply bg-card rounded-3xl;
+    box-shadow: var(--ios-shadow-lg);
+  }
+}
